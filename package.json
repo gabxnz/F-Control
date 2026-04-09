@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/gabxnz/F-Control/issues"
   },
-  "homepage": "https://github.com/gabxnz/F-Control#readme"
+  "homepage": "https://github.com/gabxnz/F-Control#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0"
+  }
 }
