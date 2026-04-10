@@ -1,3 +1,4 @@
+/* global test, expect */
 test('deve calcular o saldo final corretamente', () => {
   const receitas = 1500;
   const despesas = 300;
