@@ -1,4 +1,5 @@
 # F-Control
+[![CI de Qualidade (Lint + Testes)](https://github.com/gabxnz/F-Control/actions/workflows/ci.yml/badge.svg)](https://github.com/gabxnz/F-Control/actions/workflows/ci.yml)
 
 **Problema Real:** A dificuldade de organização financeira e o endividamento por falta de controle de gastos simples.
 **Solução:** Uma ferramenta intuitiva para registro de entradas e saídas, permitindo visualização clara do saldo.
