@@ -1,7 +1,7 @@
 {
-  "name": "control",
+  "name": "f-control",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplicativo de controle financeiro para controlar os gastos do cotidiano.",
   "main": "script.js",
   "scripts": {
     "test": "jest",
