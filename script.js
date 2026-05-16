@@ -304,4 +304,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- INITIALIZATION ---
     loadData();
     render();
+
+    // --- COTAÇÕES ---
+    const atualizarCotacoes = async () => {
+        try {
+            const response = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL');
+            const data = await response.json();
+            const usd = parseFloat(data.USDBRL.bid).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            const eur = parseFloat(data.EURBRL.bid).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            document.getElementById('cotacao-usd').textContent = usd;
+            document.getElementById('cotacao-eur').textContent = eur;
+        } catch (error) {
+            document.getElementById('cotacao-usd').textContent = 'Erro';
+            document.getElementById('cotacao-eur').textContent = 'Erro';
+        }
+    };
+    atualizarCotacoes();
 });
