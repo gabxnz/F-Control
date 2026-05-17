@@ -1,4 +1,4 @@
-/* global test, expect, jest */
+/* global test, expect, jest, global */
 
 test('AwesomeAPI deve retornar cotação do Dólar (USDBRL)', async () => {
   global.fetch = jest.fn(() =>
