@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const eur = parseFloat(data.EURBRL.bid).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
             document.getElementById('cotacao-usd').textContent = usd;
             document.getElementById('cotacao-eur').textContent = eur;
-        } catch (error) {
+        } catch {
             document.getElementById('cotacao-usd').textContent = 'Erro';
             document.getElementById('cotacao-eur').textContent = 'Erro';
         }

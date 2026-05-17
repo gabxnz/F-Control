@@ -1,3 +1,4 @@
+/* global test, expect */
 test('AwesomeAPI deve retornar cotação do Dólar (USDBRL)', async () => {
   const url = 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL';
 

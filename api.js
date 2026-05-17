@@ -1,3 +1,5 @@
+/* global module */
+// api.js
 async function fetchCotacoes() {
   const url = 'https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL';
   const response = await fetch(url);
